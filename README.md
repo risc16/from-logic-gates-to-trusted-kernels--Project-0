@@ -89,10 +89,10 @@ following form:
         output [15:0] out
     );
 
-     assign  out = (func == 2'd0) ?  in1 + in2   : 16'dZ;
-     assign  out = (func == 2'd1) ?  in1 - in2   : 16'dZ;
-     assign  out = (func == 2'd2) ?  in1 & in2   : 16'dZ;
-     assign  out = (func == 2'd3) ?  in1 | in2   : 16'dZ;
+        assign  out = (func == 2'd0) ?  in1 + in2   : 16'dZ;
+        assign  out = (func == 2'd1) ?  in1 - in2   : 16'dZ;
+        assign  out = (func == 2'd2) ?  in1 & in2   : 16'dZ;
+        assign  out = (func == 2'd3) ?  in1 | in2   : 16'dZ;
 
     endmodule
 
