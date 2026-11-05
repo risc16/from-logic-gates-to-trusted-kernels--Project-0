@@ -1,4 +1,5 @@
 ![](./img/logo-sm.jpg)
+
 **Designing and Securing Modern Computing Systems**
 From Logic Gates to Trusted Kernels
 
