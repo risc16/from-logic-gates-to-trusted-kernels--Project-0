@@ -83,13 +83,13 @@ following form:
     //
 
     module alu16 (
-       input [1:0] func,
+        input [1:0] func,
         input [15:0] in1,
         input [15:0] in2,
         output [15:0] out
     );
 
-        assign  out = (func == 2'd0) ?  in1 + in2   : 16'dZ;
+     assign  out = (func == 2'd0) ?  in1 + in2   : 16'dZ;
      assign  out = (func == 2'd1) ?  in1 - in2   : 16'dZ;
      assign  out = (func == 2'd2) ?  in1 & in2   : 16'dZ;
      assign  out = (func == 2'd3) ?  in1 | in2   : 16'dZ;
@@ -135,19 +135,19 @@ The design in Project LS0 is a 32-bit counter and has the following
 form:
 
     module counter32 (
-     input clk,
+       input clk,
        input reset,
-     output [31:0] out
+       output [31:0] out
     );
 
         reg     [31:0]  counter;
-     wire    [31:0]  adder = counter + 1;
+        wire    [31:0]  adder = counter + 1;
 
         assign out = counter;
 
         always @ (posedge clk) begin
-         counter <= (reset) ? 32'd0 : adder;
-      end
+            counter <= (reset) ? 32'd0 : adder;
+        end
 
     endmodule
 
